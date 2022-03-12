@@ -1,0 +1,61 @@
+footer {
+	background-color: hsl(233, 26%, 24%);
+
+	li {
+		padding: 0.5em;
+		margin: 0;
+		color: white;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.8em;
+	}
+
+	.logo {
+		padding: 0.25em;
+		margin: 0.25em 0 1.5em 0;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		padding: 2em;
+		margin: 0 auto;
+	}
+}
+
+.socials {
+	li {
+		display: inline-block;
+		padding: 0.25em;
+	}
+
+	img {
+		width: 1.25em;
+	}
+}
+
+@media (min-width: 70em) {
+	footer {
+		text-align: start;
+
+		nav {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 2fr 2fr 1fr 2fr;
+			grid-gap: 2em;
+		}
+
+		.column:last-child {
+			text-align: end;
+			grid-column: 4;
+		}
+	}
+}
